@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  background-color: #111827;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes orbit {
+  from {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.orbit {
+  position: absolute;
+  top: -250px; 
+  left: 50%; 
+  right: 50%; 
+  animation: orbit 12s linear infinite; 
+  /* transform-origin:  200px 420px;  */
+  transform-origin:  150px 250px; 
+}
+
+
+
+.animate-spin {
+  animation: spin 12s linear infinite;
+}
+
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
