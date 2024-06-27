@@ -1,5 +1,6 @@
 import Button from "./components/Button";
 import Carrossel from "./components/Carrossel";
+import ScrollPage from "./components/ScrollSecction";
 import SegundaDobra from "./components/SegundaDobra";
 import PrimeiraDobra from "./components/firstPage";
 
@@ -21,6 +22,9 @@ export default function Home() {
       </div>
       <div className="relative -mt-72 z-40">
         <Carrossel />
+      </div>
+      <div className="relative -mt-72 z-40">
+        <ScrollPage />
       </div>
     </div>
   );
