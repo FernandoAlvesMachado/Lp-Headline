@@ -50,3 +50,27 @@ html{
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
+
+
+.glow-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.glow-container::before {
+  content: '';
+  position: absolute;
+  top: var(--mouse-y, 0); /* Inicialmente 0 */
+  left: var(--mouse-x, 0); /* Inicialmente 0 */
+  width: 2500px;
+  height: 2500px;
+  background: radial-gradient(circle, rgba(52, 123, 255, 0.5) 0%, transparent 60%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: top 0.1s, left 0.1s, opacity 0.3s;
+  opacity: 0; /* Inicialmente oculto */
+}
+
+.glow-active .glow-container::before {
+  opacity: 1; /* Visível quando a classe glow-active está presente */
+}
