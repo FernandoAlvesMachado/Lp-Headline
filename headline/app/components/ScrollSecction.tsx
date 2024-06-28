@@ -5,7 +5,6 @@ import ItemHover from './ItemHover';
 
 export default function ScrollPage() {
 
-    const referencia = document.querySelector('#divMaeBro')
     const containerRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
