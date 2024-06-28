@@ -17,16 +17,16 @@ export default function Home() {
           <PrimeiraDobra />
         </div>
       </div>
-      <div className="relative -mt-72 z-40">
-        <SegundaDobra />
-      </div>
-      <div className="relative -mt-72 z-40">
-        <Carrossel />
-      </div>
-      <div className="relative -mt-72 z-40">
+      <div className="relative -mt-96 z-40">
         <ScrollPage />
       </div>
-    
+      <div className="relative h-[650px]  -mt-72 z-50">
+        <Carrossel />
+      </div>
+      <div className="relative h-[650px]  -mt-72 z-30">
+        <SegundaDobra />
+      </div>
+
     </div>
   );
 }
