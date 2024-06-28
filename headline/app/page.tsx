@@ -26,6 +26,7 @@ export default function Home() {
       <div className="relative -mt-72 z-40">
         <ScrollPage />
       </div>
+    
     </div>
   );
 }
