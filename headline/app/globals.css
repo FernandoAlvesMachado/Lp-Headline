@@ -86,7 +86,14 @@ html{
 	        animation: text-focus-in 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
-
+.particles {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
 
  @-webkit-keyframes text-focus-in {
   0% {
@@ -114,3 +121,27 @@ html{
 }
 
 
+.bg-white-animated {
+  background: linear-gradient(270deg, #fbfbfb, #e8e8e8, #a5d2fd, #b7c4d0);
+  background-size: 800% 800%;
+
+  -webkit-animation: AnimationName 7s ease infinite;
+  -moz-animation: AnimationName 7s ease infinite;
+  animation: AnimationName 7s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 88%}
+  50%{background-position:100% 13%}
+  100%{background-position:0% 88%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 88%}
+  50%{background-position:100% 13%}
+  100%{background-position:0% 88%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 88%}
+  50%{background-position:100% 13%}
+  100%{background-position:0% 88%}
+}

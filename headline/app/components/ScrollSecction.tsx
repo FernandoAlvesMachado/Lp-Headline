@@ -5,60 +5,13 @@ import ItemHover from './ItemHover';
 
 export default function ScrollPage() {
 
-    const containerRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const container = containerRef.current;
-
-        if (!container) return;
-
-        const handleMouseMove = (event: MouseEvent) => {
-            const { clientX, clientY } = event;
-
-            // Obtém as dimensões da div
-            const { left, top, width, height } = container.getBoundingClientRect();
-
-            // Calcula a posição do cursor dentro da div
-            const x = clientX - left;
-            const y = clientY - top;
-
-            // Verifica se o cursor está dentro dos limites da div
-            if (x >= 0 && x <= width && y >= 0 && y <= height) {
-                // Define as variáveis CSS customizadas para o glow
-                container.style.setProperty('--mouse-x', `${x}px`);
-                container.style.setProperty('--mouse-y', `${y}px`);
-            }
-        };
-
-        const handleMouseEnter = () => {
-            container.classList.add('glow-active');
-            container.addEventListener('mousemove', handleMouseMove);
-        };
-
-        const handleMouseLeave = () => {
-            container.classList.remove('glow-active');
-            container.removeEventListener('mousemove', handleMouseMove);
-        };
-
-        container.addEventListener('mouseenter', handleMouseEnter);
-        container.addEventListener('mouseleave', handleMouseLeave);
-
-        return () => {
-            if (container) {
-                container.removeEventListener('mouseenter', handleMouseEnter);
-                container.removeEventListener('mouseleave', handleMouseLeave);
-                container.removeEventListener('mousemove', handleMouseMove);
-            }
-        };
-    }, []);
-
+    
     return (
         <div
             className="flex items-center z-10 justify-center mt-40 mb-40 w-full glow-container"
         >
             <div
                 id='divMaeBro'
-                ref={containerRef}
                 style={{
                     backgroundImage: `url(${BgEarth.src})`,
                     backgroundSize: 'cover', // Ajusta a imagem para cobrir todo o container

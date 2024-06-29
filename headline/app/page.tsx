@@ -1,7 +1,9 @@
 import Button from "./components/Button";
 import Carrossel from "./components/Carrossel";
 import ScrollPage from "./components/ScrollSecction";
+import SecctionAbout from "./components/SecctionAbout";
 import SegundaDobra from "./components/SegundaDobra";
+import StepsSecction from "./components/StepsSecction";
 import PrimeiraDobra from "./components/firstPage";
 
 export default function Home() {
@@ -25,6 +27,12 @@ export default function Home() {
       </div>
       <div className="relative h-[650px]  -mt-72 z-30">
         <SegundaDobra />
+      </div>
+      <div className="relative h-[650px]  -mt-72 z-30">
+        <SecctionAbout />
+      </div>
+      <div className="-mt-32">
+        <StepsSecction />
       </div>
 
     </div>
