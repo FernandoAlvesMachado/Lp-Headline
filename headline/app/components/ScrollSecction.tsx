@@ -8,7 +8,7 @@ export default function ScrollPage() {
     
     return (
         <div
-            className="flex items-center z-10 justify-center mt-40 mb-40 w-full glow-container"
+            className="flex items-center z-10 justify-center  w-full glow-container"
         >
             <div
                 id='divMaeBro'

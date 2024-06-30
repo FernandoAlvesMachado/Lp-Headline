@@ -120,6 +120,46 @@ html{
   }
 }
 
+.noise {
+  z-index: 1;
+  opacity: 10%;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  opacity: .17;
+  background-image: url('Assets/giphy\ \(1\).webp');
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  mix-blend-mode: plus-lighter;
+}
+
+.carousel {
+  overflow-x: hidden; /* Esconde o overflow horizontal */
+  white-space: nowrap; /* Evita quebra de linha nos itens */
+  width: 100%; /* Ajuste conforme necessário */
+  margin: 0 auto; /* Centraliza o carrossel na tela */
+  position: relative;
+}
+
+.carouselContent {
+  display: flex;
+  width: fit-content; /* Ajuste conforme necessário */
+  animation: scroll 60s linear infinite; /* Animação para rolar o carrossel */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
 
 .bg-white-animated {
   background: linear-gradient(270deg, #fbfbfb, #e8e8e8, #a5d2fd, #b7c4d0);

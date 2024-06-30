@@ -51,9 +51,9 @@ export default function SegundaDobra() {
     }, []);
 
     return (
-        <div className="mt-72 z-40 w-full items-center justify-center flex-col flex overflow-hidden">
+        <div className="z-40 w-full items-center justify-center flex-col flex overflow-hidden">
             <div className="flex gap-12 h-[450px] max-w-6xl flex-col md:flex-row items-center justify-center relative" ref={containerRef}>
-                <div className="px-16  h-96 bg-blue-300 rounded-3xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100 flex items-center justify-center p-4 text-white text-center glow-container">
+                <div className="px-16  h-96 bg-blue-900 rounded-3xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100 flex items-center justify-center p-4 text-white text-center glow-container">
                     <h1 className='z-50 text-5xl font-bold flex flex-col gap-5'>
                         O que fazemos?
                         <p className='text-xl flex flex-col'>Nós não somos uma agência de lançamentos tradicional.
