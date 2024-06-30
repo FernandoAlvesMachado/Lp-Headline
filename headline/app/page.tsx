@@ -1,11 +1,13 @@
 import Button from "./components/Button";
 import Carrossel from "./components/Carrossel";
 import Especialistas from "./components/Especialistas";
+import Footer from "./components/Footer";
 import ScrollPage from "./components/ScrollSecction";
 import SecctionAbout from "./components/SecctionAbout";
 import SecctionEspecialistas from "./components/SecctionEspecialistas";
 import SegundaDobra from "./components/SegundaDobra";
 import StepsSecction from "./components/StepsSecction";
+import WorkWithUs from "./components/WorkWithUs";
 import PrimeiraDobra from "./components/firstPage";
 
 export default function Home() {
@@ -38,9 +40,14 @@ export default function Home() {
         <StepsSecction />
       </div>
       <div className="">
-        <SecctionEspecialistas/>
+        <SecctionEspecialistas />
       </div>
-
+      <div>
+        <WorkWithUs />
+      </div>
+      <div>
+        <Footer/>
+</div>
     </div>
   );
 }

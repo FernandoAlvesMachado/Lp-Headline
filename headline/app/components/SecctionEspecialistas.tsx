@@ -11,9 +11,6 @@ export default function SecctionEspecialistas() {
                     <Especialistas />
                 </div>
             </div>
-
-
-
         </div>
     );
 }
