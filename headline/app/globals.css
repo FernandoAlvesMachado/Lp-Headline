@@ -135,6 +135,18 @@ html{
   pointer-events: none;
   mix-blend-mode: plus-lighter;
 }
+.galaxy {
+  opacity: 100%;
+  width: 100%;
+  height: 100%;
+  background-image: url('Assets/galayV.gif');
+  overflow: hidden;
+  z-index: -10px;
+  background-position: center;
+  background-size: auto;
+  pointer-events: none;
+  mix-blend-mode: plus-lighter;
+}
 
 .carousel {
   overflow-x: hidden; /* Esconde o overflow horizontal */

@@ -11,9 +11,9 @@ export default function StepsSection() {
                 <div className="w-full items-center">
                     <h1 className="text-5xl mb-14 text-center font-bold text-white">Nossos marcos…</h1>
                 </div>
-                <div className="flex flex-col gap-7 w-full">
-                    <div className="flex gap-7">
-                        <div className="flex flex-col items-center justify-center gap-0 text-center text-white">
+                <div className="flex flex-wrap flex-col gap-7 w-full">
+                    <div className="flex flex-wrap items-center justify-center gap-7">
+                        <div className="flex flex-wrap flex-col items-center justify-center gap-0 text-center text-white">
                             <h1 className='text-3xl font-bold'>
                                 <CountUp end={45} duration={5} separator="." prefix="+"/>
                                 {' '}milhões
@@ -32,7 +32,7 @@ export default function StepsSection() {
                             <p>Português, espanhol e inglês.</p>
                         </div>
                     </div>
-                    <div className="flex gap-7">
+                    <div className="flex flex-wrap items-center justify-center md:justify-between gap-7">
                         <div className="flex flex-col items-center justify-center gap-0 text-center text-white">
                             <h1 className='text-3xl font-bold'>
                                 {' '}
