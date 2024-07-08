@@ -30,9 +30,9 @@ export default function Home() {
         <h1 className="text-3xl text-center text-white">Aqui temos o time mais completo.</h1>
         <Carrossel />
       </div>
-      <div className="relative w-full flex items-center justify-center">
-        <SegundaDobra />
-      </div>
+        {/* <div className="relative w-full flex items-center justify-center">
+          <SegundaDobra />
+        </div> */}
       <div>
         <WhatWeDo />
       </div>
