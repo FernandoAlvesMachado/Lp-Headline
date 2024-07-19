@@ -4,7 +4,7 @@ export default function WorkWithUs() {
             <div className="flex items-center justify-center  max-w-6xl">
                 <div className="flex items-center p-6 justify-center gap-5 flex-col">
                     <h1 className="text-3xl text-center w-full font-bold text-white ">
-                    Quero trabalhar com a gente?
+                    Quer trabalhar com a gente?
                     </h1>
                     <div className="flex gap-12 flex-wrap md:flex-nowrap  w-full ">
                         <div className="w-full p-6  border border-gray-200 rounded-lg shadow bg-gray-800 border-gray-700">
